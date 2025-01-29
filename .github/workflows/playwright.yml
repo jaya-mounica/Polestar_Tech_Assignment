@@ -39,7 +39,7 @@ jobs:
       run: npm run test-API
     - uses: actions/upload-artifact@v4
       with:
-        name: playwright-report
+        name: API-report
         path: test-results/ 
         retention-days: 30
       if: always()
@@ -57,3 +57,9 @@ jobs:
       uses: grafana/setup-k6-action@v1
     - name: 'run k6 test' 
       run: npm run test-k6
+    - uses: actions/upload-artifact@v4
+      with:
+        name: k6-report
+        path: result.html
+        retention-days: 30
+      if: always()
