@@ -1,0 +1,26 @@
+{
+  "name": "pw-bdd-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test-UI": "cucumber-js test Polestar-UI/src/tests/feature/",
+    "test-API": "npx playwright test Polestar-API",
+    "test-k6": "k6 run Polestar-Performance-Testing/specs/getapi.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@playwright/test": "^1.49.1",
+    "allure-commandline": "^2.32.0",
+    "allure-playwright": "^3.0.9",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.4.0",
+    "k6": "^0.0.0",
+    "luxon": "^3.5.0"
+  }
+}
