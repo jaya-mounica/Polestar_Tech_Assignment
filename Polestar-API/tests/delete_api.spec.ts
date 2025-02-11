@@ -32,6 +32,6 @@ test('Graph API DELETE Request', async({ request }) => {
        }
     })
 
-   await  expect(DeleteAPIResponse.status()).toBe(204);
+   await  expect(await DeleteAPIResponse.status()).toBe(204);
 
 })

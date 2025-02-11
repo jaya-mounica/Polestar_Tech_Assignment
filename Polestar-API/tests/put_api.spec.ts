@@ -39,8 +39,8 @@ test('Graph API PUT Request', async({ request }) => {
         }
     })
 
-   await  expect(postAPIResponse.ok()).toBeTruthy();
-   await  expect(putAPIResponse.status()).toBe(200);
+   await  expect(await postAPIResponse.ok()).toBeTruthy();
+   await  expect(await putAPIResponse.status()).toBe(200);
 
 
 

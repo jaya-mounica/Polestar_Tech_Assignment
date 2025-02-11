@@ -22,8 +22,8 @@ test('Graph API POST Request using dynamic request', async({ request }) => {
         }
     })
 
-   await  expect(postAPIResponse.ok()).toBeTruthy();
-   await  expect(postAPIResponse.status()).toBe(201);
+   await  expect(await postAPIResponse.ok()).toBeTruthy();
+   await  expect(await postAPIResponse.status()).toBe(201);
 
 
 
