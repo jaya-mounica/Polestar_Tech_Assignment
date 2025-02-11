@@ -60,7 +60,7 @@ config/cucumber.js -> One file to do all the magic
 
 package.json -> Contains all the dependencies
 
-
+![alt text](image-2.png)
 
 
 # Playwright API Testing
@@ -103,7 +103,7 @@ src\test -> write your features here
 
 test-data ->  Add json request in the file
 
-
+![alt text](image-1.png)
 
 
 
@@ -137,3 +137,5 @@ Setup:
 ```
  k6 run <spec name/filename> --out json=test.json
 ````
+
+![alt text](image.png)
