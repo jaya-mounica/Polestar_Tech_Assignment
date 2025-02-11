@@ -40,7 +40,7 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
         name: API-report
-        path: test-results
+        path: test-results/
         retention-days: 30
       if: always()
   k6-test:
