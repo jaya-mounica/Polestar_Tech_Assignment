@@ -1,6 +1,6 @@
 export class locators {
     polestar3Menu = {
-        xpath: "//div[@class='css-1lnj9yu']/ul/li[2]/div/button[@id='mega-menu-:r9:-secondary-navigation-control-1']",
+        xpath: "//div[@class='css-1lnj9yu']/ul/li[2]/div/button",
         description: "polestar3Menu Locator"
     }
     HoveronTestDrive = {

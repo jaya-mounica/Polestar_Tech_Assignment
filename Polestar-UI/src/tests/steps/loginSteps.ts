@@ -34,6 +34,6 @@ When('User clicks on the Login button', async function () {
 });
 
 Then('Login should fail', async function () {
-  await pagefixture.page.waitForTimeout(5000)
+  await pagefixture.page.waitForTimeout(8000)
   await pagefixture.verifyLoginPage.VerifyerrorValidation();
 });

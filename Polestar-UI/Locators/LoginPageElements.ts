@@ -20,7 +20,7 @@ export class locators {
 
     errorValidation = {
         xpath: "//div[@id='errorSection']",
-        description: "loginbutton Locator"
+        description: "errorvalidation Locator"
     }
 
 }
