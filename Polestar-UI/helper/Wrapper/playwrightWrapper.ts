@@ -1,35 +1,45 @@
 import { expect, Page } from "@playwright/test";
 
-class playwrightWrapper{
+class playwrightWrapper {
     page: any;
-    constructor( page: Page) {
+    constructor(page: Page) {
         this.page = page;
     }
-    async navigate(url: string){
+    async navigate(url: string) {
         await this.page.goto(url)
     }
 
-    async waitAndClick(locator: string){
+    async waitAndClick(locator: string) {
         const element = this.page.locator(locator);
         await element.waitFor({
-            state: "visible"   
+            state: "visible"
         });
         await element.click();
     }
 
-    async navigateTo(link: string){
+    async navigateTo(link: string) {
         await Promise.all([
             this.page.waitForNavigation(),
-          this.page.click(link)
+            this.page.click(link)
 
         ])
     }
 
-    async verifyAndClickCookies(){
+    async verifyAndClickCookies() {
         await expect(this.page.getByRole('button', { name: 'Accept all' })).toBeVisible();
         await this.page.getByRole('button', { name: 'Accept all' }).click();
 
     }
+
+    async fill(locator: string) {
+        const element = this.page.locator(locator);
+        await element.waitFor({
+            state: "visible"
+        });
+        await element.fill();
+    }
+
+
 }
 
 export default playwrightWrapper;

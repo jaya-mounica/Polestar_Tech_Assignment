@@ -1,7 +1,4 @@
 {
-        
-    "email" : "demo@demo.com",
-    "password" : "demotest"
-    
-    }
-
+    "email": "demo@demo.com",
+    "password": "demotest"
+}
